@@ -48,3 +48,7 @@
     flex: 1;
     position: relative;
 }
+
+.heroImg{
+    object-fit: contain;
+}
