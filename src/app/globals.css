@@ -21,3 +21,14 @@ a{
     text-decoration: none;
     color: inherit;
 }
+
+.container{
+    width: 1040px;
+    margin: auto;
+    padding-left: 32px;
+    padding-right: 32px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}

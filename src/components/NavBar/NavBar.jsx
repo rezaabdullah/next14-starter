@@ -1,13 +1,13 @@
 import Links from "./Links/Links";
+import styles from "./navbar.module.css"
 
 const NavBar = () => {
     return (
-        <div>
-            <div>Logo</div>
-            {/* <Link href="/">Home</Link>
-            <Link href="/about">About</Link>
-            <Link href="/contact">Contact Us</Link> */}
-            <Links></Links>
+        <div className={styles.container}>
+            <div className={styles.logo}>Logo</div>
+            <div>
+                <Links></Links>
+            </div>
         </div>
     );
   };
