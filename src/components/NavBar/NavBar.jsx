@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Links from "./Links/Links";
 
 const NavBar = () => {
