@@ -9,6 +9,7 @@
     cursor: pointer;
     font-weight: bold;
     border-radius: 8px;
+    border: none;
 }
 
 .menuButton,
