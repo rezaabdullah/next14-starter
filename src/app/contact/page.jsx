@@ -1,11 +1,11 @@
-"use client"; // disable SSR on specific compoment (hydrationTest.jsx)
+// "use client"; // disable SSR on specific compoment (hydrationTest.jsx)
 import Image from "next/image";
 import styles from "./contactpage.module.css";
 // import { useEffect, useState } from "react"; disable SSR on specific compoment (hydrationTest.jsx)
 // import HydrationTest from "@/components/hydrationTest"; dynamic import for disabling SSR
-import dynamic from "next/dynamic";
+// import dynamic from "next/dynamic";
 
-const HydrationTestNoSSR = dynamic(() => import("@/components/hydrationTest"), {ssr: false});
+// const HydrationTestNoSSR = dynamic(() => import("@/components/hydrationTest"), {ssr: false});
 
 const ContactPage = () => {
   // hydration error explanation (ex1)
@@ -17,9 +17,9 @@ const ContactPage = () => {
   // const[isClient, setIsClient] = useState(false);
   // useEffect(() => {
   //   setIsClient(true);
-  // }, [])
-  const a = Math.random();
-  console.log(a);
+  // // }, [])
+  // const a = Math.random();
+  // console.log(a);
 
   return <div className={styles.container}>
     <div className={styles.imgContainer}>
@@ -29,7 +29,7 @@ const ContactPage = () => {
     {/* {isClient && a}; ex2 */}
     <div className={styles.formContainer}>
       {/* <HydrationTestNoSSR /> */}
-      <div suppressHydrationWarning>{a}</div>
+      {/* <div suppressHydrationWarning>{a}</div> */}
       <form action="" className={styles.form}>
         <input type="text" placeholder="Enter full name"></input>
         <input type="text" placeholder="Enter email address"></input>
