@@ -2,7 +2,7 @@ import { Inter } from 'next/font/google'
 import './globals.css'
 import NavBar from '@/components/NavBar/NavBar'
 import Footer from '@/components/footer/Footer'
-import ClientSideProviderTest from '@/components/clientSideProviderTest'
+// import ClientSideProviderTest from '@/components/clientSideProviderTest' parent-client<>child-server
 
 const inter = Inter({ subsets: ['latin'] })
 
