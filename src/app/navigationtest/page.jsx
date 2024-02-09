@@ -6,10 +6,10 @@ const NavigationTestPage = () => {
   // CSR navigation
   const router = useRouter();
   const pathName = usePathname();
-  const searchParams = useSearchParams();
+  let searchParams = useSearchParams();
   console.log(pathName);
 
-  const q = searchParams.get("q");
+  let q = searchParams.get("q");
   console.log(q);
 
   const handleClient = () => {
