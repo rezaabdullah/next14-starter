@@ -14,7 +14,7 @@ const NavigationTestPage = () => {
 
   const handleClient = () => {
     console.log("Clicked");
-    // router.push("/");
+    router.push("/");
     router.back();
   }
   
